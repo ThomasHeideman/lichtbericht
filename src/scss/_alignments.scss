@@ -1,0 +1,123 @@
+.just {
+  &--content {
+    &--start {
+      justify-content: start ;
+    }
+    &--center {
+      justify-content: center;
+    }
+    &--end {
+      justify-content: end;
+    }
+    &--stretch {
+      justify-content: stretch;
+    }
+    &--around {
+      justify-content: space-around;
+    }
+    &--between {
+      justify-content: space-between;
+    }
+    &--evenly {
+      justify-content: space-evenly;
+    }
+  }
+  &--items {
+    &--start {
+      justify-items: start ;
+    }
+    &--center {
+      justify-items: center;
+    }
+    &--end {
+      justify-items: end;
+    }
+    &--baseline {
+      justify-items: baseline;
+    }
+  }
+  &--self {
+    &--start {
+      justify-self: start ;
+    }
+    &--center {
+      justify-self: center;
+    }
+    &--end {
+      justify-self: end;
+    }
+    &--stretch {
+      justify-self: stretch;
+    }
+    &--baseline {
+      justify-self: baseline;
+    }
+  }
+}
+.align {
+  &--content {
+    &--start {
+      align-content: start ;
+    }
+    &--center {
+      align-content: center;
+    }
+    &--end {
+      align-content: end;
+    }
+    &--stretch {
+      align-content: stretch;
+    }
+    &--around {
+      align-content: space-around;
+    }
+    &--between {
+      align-content: space-between;
+    }
+    &--evenly {
+      align-content: space-evenly;
+    }
+  }
+  &--items {
+    &--start {
+      align-items: start ;
+    }
+    &--center {
+      align-items: center;
+    }
+    &--end {
+      align-items: end;
+    }
+    &--baseline {
+      align-items: baseline;
+    }
+  }
+  &--self {
+    &--start {
+      align-self: start ;
+    }
+    &--center {
+      align-self: center;
+    }
+    &--end {
+      align-self: end;
+    }
+    &--stretch {
+      align-self: stretch;
+    }
+    &--baseline {
+      align-self: baseline;
+    }
+  }
+}
+.text {
+  &--left {
+    text-align: left;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--right {
+    text-align: right;
+  }
+}

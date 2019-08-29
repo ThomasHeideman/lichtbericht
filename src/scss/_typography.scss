@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'NuonMatthew';
+  src: url('/Fonts/NuonMatthew-Bold.woff2') format('woff2'),
+  url('../Fonts/NuonMatthew-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('../Fonts/BebasNeueBook.woff2') format('woff2'),
+  url('../Fonts/BebasNeueBook.woff') format('woff'),
+  url('../Fonts/BebasNeueBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../Fonts/BebasNeue-Thin.woff2') format('woff2'),
+  url('../Fonts/BebasNeue-Thin.woff') format('woff'),
+  url('../Fonts/BebasNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../Fonts/BebasNeueRegular.woff2') format('woff2'),
+  url('../Fonts/BebasNeueRegular.woff') format('woff'),
+  url('../Fonts/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../Fonts/BebasNeueBold.woff2') format('woff2'),
+  url('../Fonts/BebasNeueBold.woff') format('woff'),
+  url('../Fonts/BebasNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$baseline-px: 16px;
+
+$baseline-rem: $baseline-px / 1rem * 1;
+
+$baseline-em: 16px / 1em * 1;
+
+/// Default base font size in pixel <br />
+/// The value should be the same as the font-size value for the html element
+///
+/// @group Baseline
+///
+$baseline-px: 16px;
+
+/// Default base font size in rem
+///
+/// @group Baseline
+///
+/// @require {Number} $baseline-px
+///
+$baseline-rem: $baseline-px / 1rem * 1;
+
+/// Default base font size in em
+///
+/// @group Baseline
+///
+/// @require {Number} $baseline-px
+///
+$baseline-em: 16px / 1em * 1;
+
+/**
+ * Font definitions
+ */
+
+@mixin typ-display {
+  font-family: 'NuonMatthew', sans-serif;
+  font-size: rem(32px);
+  line-height: rem(42px);
+  font-weight: bold;
+  &--caps {
+    text-transform: uppercase;
+  }
+  @include breakpoint(sm)  {
+    font-size: rem(40px);
+    line-height: rem(50px);
+  }
+  @include breakpoint(md)  {
+    font-size: rem(48px);
+    line-height: rem(58px);
+  }
+  @include breakpoint(lg)  {
+    font-size: rem(58px);
+    line-height: rem(68px);
+  }
+}
+
+@mixin typ-h1 {
+  font-family: 'NuonMatthew', sans-serif;
+  font-size: rem(24px);
+  line-height: rem(34px);
+  font-weight: bold;
+
+   @include breakpoint(lg)  {
+    font-size: rem(40px);
+    line-height: rem(50px);
+  }
+}
+
+@mixin typ-h2 {
+  font-family: 'NuonMatthew', sans-serif;
+  font-size: rem(20px);
+  line-height: rem(32px);
+  font-weight: normal;
+
+   @include breakpoint(lg)  {
+    font-size: rem(32px);
+    line-height: rem(40px);
+  }
+}
+
+@mixin typ-h3 {
+  font-family: 'NuonMatthew', sans-serif;
+  font-size: rem(18px);
+  line-height: rem(24px);
+  font-weight: normal;
+}
+@mixin typ-h4 {
+  font-family: 'NuonMatthew', sans-serif;
+  font-size: rem(16px);
+  line-height: rem(24px);
+  font-weight: normal;
+}
+@mixin typ-h5 {
+  font-family: "PT Sans", sans-serif;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  font-weight: 700;
+}
+@mixin typ-p {
+  font-family: "PT Sans", sans-serif;
+  font-size: rem(16px);
+  line-height: rem(24px);
+}
+@mixin typ-small {
+  font-family: "PT Sans", sans-serif;
+  font-size: rem(14px);
+}
+
+
+html {
+  font-size: percentage($baseline-px / 16px);
+}
+body {
+  font: rem($baseline-px) "PT Sans", sans-serif;
+  word-wrap: break-word; // legacy name of overflow-wrap
+  overflow-wrap: break-word;
+  line-height: 1.5rem;
+  overflow-x: hidden;
+}
+
+.typ-display {
+  @include typ-display;
+}
+.typ-h1 {
+  @include typ-h1;
+}
+
+.typ-h2 {
+  @include typ-h2;
+}
+
+.typ-h3 {
+  @include typ-h3;
+}
+.typ-h4 {
+  @include typ-h4;
+}
+.typ-h5 {
+  @include typ-h5;
+}
+
+.typ-p {
+  @include typ-p;
+}
+.typ-small {
+  @include typ-small;
+}
+
