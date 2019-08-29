@@ -1560,7 +1560,10 @@ body {
       transform: scale(0.95);
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
-  @media (min-width: 768px) {
+    .step .next:not(.button) img {
+      width: 100%;
+      height: auto; }
+  @media (min-width: 992px) {
     .step .column.column--50.column--25-lg.m-no:nth-of-type(4) {
       -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
